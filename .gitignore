@@ -1,0 +1,9 @@
+# Project Files
+*.wav
+
+# Eclipse Files
+.metadata
+.project
+.classpath
+.settings
+bin
