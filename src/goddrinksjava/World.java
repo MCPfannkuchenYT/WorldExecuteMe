@@ -53,7 +53,7 @@ public class World {
 
 	public boolean isExecutableBy(Thing me) {
 
-		return false;
+		return true;
 	}
 
 	public int getThingIndex(Thing you) {
@@ -63,7 +63,7 @@ public class World {
 
 	public Object getGod() {
 		
-		return null;
+		return new Thing();
 	}
 
 	public void unite(Thing me, Thing you) {

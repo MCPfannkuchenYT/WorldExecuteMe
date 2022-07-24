@@ -4,7 +4,7 @@ public class Memory {
 
 	public boolean isErasable() {
 
-		return false;
+		return true; // wait what?
 	}
 
 }

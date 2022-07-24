@@ -1,10 +1,10 @@
 package goddrinksjava;
 
-public class Thing {
+public class Thing implements PointSet, Circle, SineWave, Sequence, Eggplant, Tomato, TabbyCat {
 
 	public Dimensions getDimensions() {
 
-		return null;
+		return new Dimensions();
 	}
 
 	public void resetDimensions() {
@@ -32,7 +32,7 @@ public class Thing {
 
 	public Circumference getCircumference() {
 
-		return null;
+		return new Circumference();
 	}
 
 	public void addAction(String string, Object tangent) {
@@ -57,7 +57,7 @@ public class Thing {
 
 	public boolean getSenseIndex(String string) {
 
-		return false;
+		return true;
 	}
 
 	public void addFeeling(String string) {
@@ -66,7 +66,7 @@ public class Thing {
 
 	public Memory getMemory() {
 		
-		return null;
+		return new Memory();
 	}
 
 	public void removeFeeling(String string) {
@@ -80,6 +80,7 @@ public class Thing {
 
 	public void setOpinion(Object opinionIndex, boolean b) {
 		
+		throw new IllegalArgumentException();
 	}
 
 	public Object toExecution() {
@@ -125,12 +126,12 @@ public class Thing {
 
 	public Nutrients getNutrients() {
 
-		return null;
+		return new Nutrients();
 	}
 
 	public Antioxidants getAntioxidants() {
 
-		return null;
+		return new Antioxidants();
 	}
 
 	public Object toProof() {
@@ -180,6 +181,11 @@ public class Thing {
 
 	public void addAttribute(Object attribute) {
 		
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return true;
 	}
 
 }
